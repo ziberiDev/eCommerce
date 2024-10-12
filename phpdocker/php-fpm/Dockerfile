@@ -13,5 +13,7 @@ RUN apt-get update \
         php8.3-mysql \
         php8.3-redis \
         php8.3-uuid \
+        nodejs \
+        npm \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*

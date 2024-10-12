@@ -13,9 +13,8 @@ services:
 
     mysql:
         image: 'mysql:8.0'
-        working_dir: /app
         volumes:
-            - '.:/app'
+            - './phpdocker/mysql/data:/var/lib/mysql'
         environment:
             - MYSQL_ROOT_PASSWORD=root
             - MYSQL_DATABASE=eCommerceDB
